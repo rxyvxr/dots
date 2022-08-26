@@ -3,7 +3,7 @@ sudo pacman -Syu --needed git base-devel
 git clone https://aur.archlinux.org/paru-bin.git
 cd paru-bin && makepkg -si
 paru -S alacritty thunar bspwm sxhkd exa bat feh polybar xorg-xsetroot xorg-xbacklight light pamixer picom-jonaburg-git dunst rofi flameshot ksuperkey nerd-fonts-jetbrains-mono polkit-gnome fm6000 network-manager-applet helix xfce4-power-manager betterlockscreen zsh zsh-autosuggestions zsh-syntax-highlighting oh-my-zsh-git catppuccin-gtk-theme papirus-icon-theme --needed --noconfirm
-git clone https://github.com/rxyvxr/main-dots.git --depth 1
+git clone https://github.com/rxyvxr/dots.git --depth 1
 cd dots
 cp -R .config/* ~/.config/
 chmod -R +x ~/.config/bspwm
