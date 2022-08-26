@@ -2,6 +2,6 @@
 
 ### Install
 ``` 
-wget https://raw.githubusercontent.com/rxyvxr/main-dots/main/install.sh 
+wget https://raw.githubusercontent.com/rxyvxr/dots/main/install.sh 
 bash install.sh
 ```
