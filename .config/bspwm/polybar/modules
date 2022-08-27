@@ -191,3 +191,23 @@ icon-pause              = " %{T2}󰏥"
 icon-stop               = " %{T2}󰙦"
 icon-prev               = "%{T3}󰒮"
 icon-next               = " %{T3}󰒭"
+
+icon-play-foreground    = ${color.teal}
+icon-pause-foreground   = ${color.teal}
+icon-stop-foreground    = ${color.teal}
+icon-prev-foreground    = ${color.blue}
+icon-next-foreground    = ${color.blue}
+toggle-on-foreground    = ${color.green}
+toggle-off-foreground   = ${color.red}
+
+[module/sep]
+type = custom/text
+content = " "
+content-foreground = ${color.bg-alt}
+
+######################################################
+
+[module/sep2]
+type = custom/text
+content = " 󰇙 "
+content-foreground = ${color.sky}
