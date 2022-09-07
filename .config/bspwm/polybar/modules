@@ -7,6 +7,31 @@ content-foreground= ${color.blue}
 content-padding = 2
 click-left=rofi -show drun
 
+[module/network]
+type = internal/network
+interface-type = wireless
+#interface = wlan0
+interval = 2.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected = <label-connected>
+format-connected-prefix = "NET: "
+format-connected-background = ${color.mb}
+format-connected-foreground = ${color.green}
+
+speed-unit = ""
+label-connected = "%netspeed%"
+label-connected-background = ${color.mb}
+label-connected-foreground = ${color.amber}
+
+format-disconnected = <label-disconnected>
+format-disconnected-prefix = ""
+format-disconnected-foreground = ${color.red}
+
+label-disconnected = Disconnected
+label-disconnected-foreground = ${color.red}
+
 [module/cpu]
 type = internal/cpu
 interval = 2
