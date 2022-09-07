@@ -17,13 +17,13 @@ unknown-as-up = true
 
 format-connected = <label-connected>
 format-connected-prefix = "NET: "
-format-connected-background = ${color.mb}
+#format-connected-background = ${color.mb}
 format-connected-foreground = ${color.green}
 
 speed-unit = ""
 label-connected = "%netspeed%"
-label-connected-background = ${color.mb}
-label-connected-foreground = ${color.amber}
+#label-connected-background = ${color.mb}
+#label-connected-foreground = ${color.amber}
 
 format-disconnected = <label-disconnected>
 format-disconnected-prefix = ""
@@ -38,6 +38,7 @@ interval = 2
 format = <label>
 format-prefix = " "
 format-padding = 1
+format-prefix-foreground = ${color.red}
 
 [module/memory]
 type = internal/memory
@@ -46,6 +47,7 @@ format = <label>
 format-prefix = " "
 label = "%mb_used%"
 format-padding = 1
+format-prefix-foreground = ${color.red}
 
 [module/filesystem]
 type = internal/fs
@@ -153,6 +155,8 @@ ramp-volume-1 = 奔
 ramp-volume-2 = 墳
 ramp-headphones-0 = 
 ramp-headphones-1 = 
+format-volume-foreground = ${color.teal}
+label-volume-foreground = ${color.white}
 
 [module/brightness]
 type = internal/backlight
@@ -192,7 +196,7 @@ type = internal/xwindow
 
 format = <label>
 format-prefix = "󱂬 "
-format-prefix-foreground = ${color.purple}
+format-prefix-foreground = ${color.lavender}
 format-prefix-font = 2
 
 label = %title%
@@ -208,8 +212,11 @@ port            = 6600
 interval        = 2
 password	= 
 format-online   = <label-song> <icon-prev><toggle><icon-next>
+#format-online	= <icon-prev><toggle><icon-next> <label-song>
+#format-online	= <icon-prev><toggle><icon-next>
 format-offline  = <label-offline>
-label-song = 𝄞 %artist% - %title%
+label-song = %artist:0:30:...% - %title:0:20:...%
+label = %output:0:30:...%
 label-offline = "󰝛 No Music"
 icon-play               = " %{T2}󰐌"
 icon-pause              = " %{T2}󰏥"
@@ -217,6 +224,8 @@ icon-stop               = " %{T2}󰙦"
 icon-prev               = "%{T3}󰒮"
 icon-next               = " %{T3}󰒭"
 
+#format-offline-background = ${color.mb}
+#format-offline-foreground = ${color.grey}
 icon-play-foreground    = ${color.teal}
 icon-pause-foreground   = ${color.teal}
 icon-stop-foreground    = ${color.teal}
