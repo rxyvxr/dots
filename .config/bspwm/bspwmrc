@@ -54,7 +54,7 @@ sxhkd &
 xfce4-power-manager &
 
 # Launch NetworkManager applet
-nm-applet &
+#nm-applet &
 
 # start compositor
 while pgrep -u $UID -x picom >/dev/null; do sleep 1; done
